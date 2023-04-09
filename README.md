@@ -1,6 +1,6 @@
-# discord_interaction_to_pubsub_message
+# discord_interaction_to_pubsub
 
-*A microservice that turns Discord Interactions into PubSub messages.*
+*A Dart server that turns Discord Interactions into PubSub messages.*
 
 - Built with Dart package [Shelf]
 - Made for running in a [Docker] container on [Cloud Run]
@@ -26,6 +26,16 @@ final body = jsonDecode('''...''');
 - if there are no logs to be found, go to the Discord Server and use /run to interact with the server
 
 [ ] let's get a working `signature_test_data.dart` file, save it somewhere secure then stop logging the signature
+
+## Build & Deploy in CI
+
+### Test locally
+
+```sh
+act -e test/config/github_workflows/event.json
+```
+
+See: How to [Run GitHub Actions locally with act](https://www.notion.so/enspyr-resources/Run-GitHub-Actions-locally-with-act-5c6c83c58f1143f0922657c80020ca7e)
 
 ## Prototyping, testing & deploying
 

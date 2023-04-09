@@ -1,5 +1,5 @@
-name: discord_interaction_to_pubsub_message
-description: A microservice that turns Discord Interactions into PubSub messages.
+name: discord_interaction_to_pubsub
+description: A Dart server that turns Discord Interactions into PubSub messages.
 version: 0.0.0-a1
 
 environment:
